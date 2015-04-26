@@ -53,7 +53,7 @@ Following technologies have been used in order to develop this project
 ##Team Member
 --------------
 * Anup Kher
-* Harleen Kaur
+* Avi Jain
 * Manasi Deshpande
-* Swetha Rathna Kempahanumaiah
-* Sylvestor George
+* Syavasya Nikhil Vadavalli
+* Vijay Raj Thota
