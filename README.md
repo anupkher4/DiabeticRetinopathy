@@ -1,11 +1,11 @@
 # CarDashboard
 --------------
 
-> Team project developed for CMPE280 (Spring 2015)
+> Team project developed for CMPE239 (Spring 2015)
 > at San Jose State University
- - Team 10 project
- - Title: Car Dashboard Design
- - Website: https://cardashboard.herokuapp.com/
+ - Team 15 project
+ - Title: Diabetic Retinopathy
+ - Website: 
 
 ##Requirements
 --------------
