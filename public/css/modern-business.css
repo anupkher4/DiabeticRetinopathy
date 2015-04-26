@@ -1,0 +1,200 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+.navbar-brand{
+
+    font-size:2em;
+    font-style: oblique;
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+    }
+
+.navbar-nav{
+
+    font-size:1.5em;
+    font-style: oblique;
+    color: #FFF;
+    text-shadow: 0 0 150px #FFF, 0 0 60px #FFF, 0 0 10px #FFF;
+}
+
+#collapseExample{
+    
+    height:100px;
+    margin: 0;
+    padding: 0;
+}
+/* Home Page Carousel */
+
+
+.myCarousel{
+    margin: 0px;
+    padding: 0px;
+}
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.page-header{
+
+    font-style: oblique;
+}
+
+.panel .panel-heading{
+
+    background-color: #3C3533;
+}
+
+#about {
+    width:100%;
+    height:75%;
+    text-align: center;    
+}
+
+hr.light{
+
+    border-color: #fff;
+}
+
+hr {
+  max-width: 50px;
+  border-color: #f05f40;
+  border-width: 3px;
+  margin-bottom: 20px;
+}
+
+section{
+    padding:100px 0;
+}
+
+.bg-primary{
+background-color: #f05f40;
+}
+
+#about h2{
+
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-size: 2.5em;
+}
+
+#about p{
+
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+
+#about .btn{
+
+    border: 0;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+}
+
+
+#services {
+    width:100%;
+    height:100%;
+    text-align: center;    
+}
+
+#services h2{
+
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-size: 2.5em;
+}
+
+
+#services h3{
+
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+#services p{
+
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+
+.glyphicon{
+
+    font-size: 50px;
+    color:#f05f40;
+}
+
+#contacts{
+    margin-bottom:0px;
+}
+
+.thumbnail{
+    width: 350px;
+}
+
+#contacts p{
+
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 0px;
+    padding:0px;
+}
