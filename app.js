@@ -51,6 +51,22 @@ app.get('/', function(req, res){
   
 });
 
+app.get('/images', function(req, res){
+	ejs.renderFile('./views/images.html',function(err, result) {
+		//console.log("yoddle");
+		// render on success
+		if (!err) {
+			res.end(result);
+		}
+		// render or error
+		else {
+			res.end('An error occurred');
+			console.log(err);
+		}
+	});
+
+});
+
 var title = 'Car Dashboard Design';
 var output1 = '';
 var output2 = '';
