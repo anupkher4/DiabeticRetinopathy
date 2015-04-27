@@ -1,4 +1,4 @@
-# CarDashboard
+# DiabeticRetinopathy
 --------------
 
 > Team project developed for CMPE239 (Spring 2015)
