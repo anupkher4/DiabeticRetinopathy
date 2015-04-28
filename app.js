@@ -6,6 +6,7 @@
 var express = require('express')
  // , routes = require('./routes')
   , bar = require('./routes/barGraph')
+  , level = require('./routes/levelData')
   , bubble = require('./routes/bubbleGraph')
   , modelBar = require('./routes/modelBarGraph')
   , pie = require('./routes/piegraph')
@@ -17,6 +18,8 @@ var express = require('express')
 
 var app = express();
 
+
+
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', __dirname + '/views');
@@ -27,6 +30,7 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 // development only
 if ('development' == app.get('env')) {
@@ -66,6 +70,39 @@ app.get('/images', function(req, res){
 	});
 
 });
+
+app.get('/connectdb', function(req, res) {
+	MongoClient.connect(url, function(err, db) {
+		assert.equal(null, err);
+		console.log("Connected correctly to server");
+		var collection = db.collection('images');
+		collection.find({}, {'_id':0, 'image':0}).toArray(function(err, docs) {
+			assert.equal(err, null);
+			console.log("Found the following records");
+			console.dir(docs);
+			db.close();
+			var out = [];
+			for (var i in docs){
+				out.push(docs[i].level);
+			}
+			console.log('Testing' + out);
+			res.render('mongo', {array: out});
+		});
+
+	});
+});
+
+app.get('/hchart', function(req, res){
+	level.createGraph(function(err, mongoData) {
+		if(err){
+			throw err;
+		}
+		else {
+			res.render('mongo', {array: mongoData});
+		}
+	});
+});
+
 
 var title = 'Car Dashboard Design';
 var output1 = '';

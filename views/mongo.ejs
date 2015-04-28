@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connecting to database</title>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+</head>
+<body>
+<h2>Array</h2>
+
+<script type="text/javascript">
+    $(function () {
+        $('#container').highcharts({
+            title: {
+                text: 'Levels of Diabetic Retinopathy',
+                x: -20 //center
+            },
+            subtitle: {
+                text: 'Retrieved from mongoDB',
+                x: -20
+            },
+            xAxis: {
+                categories: [0, 1, 2, 3, 4]
+            },
+            yAxis: {
+                title: {
+                    text: 'Level (No. of occurences)'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: 'DR'
+            },
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+                borderWidth: 0
+            },
+            series: [{
+                name: 'Level',
+                data: [<%= array %>]
+            }]
+        });
+    });
+</script>
+
+<div id="container"></div>
+
+</body>
+</html>
