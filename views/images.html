@@ -48,6 +48,55 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#container').highcharts({
+                title: {
+                    text: 'Levels of Diabetic Retinopathy',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: 'Retrieved from mongoDB',
+                    x: -20
+                },
+                xAxis: {
+                    categories: [0, 1, 2, 3, 4]
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Levels (No. of occurrences) '
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: 'DR'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: 'Accuracy of 3',
+                    data: [260, 237, 3, 0, 0]
+                }, {
+                    name: 'Accuracy of 25',
+                    data: [59, 31, 8, 2, 0]
+                }]
+            });
+        });
+    </script>
+
 </head>
 
 <body id="pagetop">
@@ -96,7 +145,7 @@
             <li class><a href="#tab1" data-toggle="tab">LEVEL 1</a></li>
             <li class><a href="#tab2" data-toggle="tab">LEVEL 2</a></li>
             <li><a href="#tab3" data-toggle="tab">LEVEL 3</a></li>
-            <li><a href="#tab4" data-toggle="tab">LEVEL 4</a></li>
+            <li><a href="#tab4" data-toggle="tab">ANALYSIS</a></li>
         </ul>
         <div class="tab-content">
             <div class="tab-pane active" id="tab0">
@@ -105,17 +154,17 @@
                     <div class="row" style="margin-bottom:20px">
                         <div class="col-md-3 portfolio-item">
 
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lz/1.jpeg" alt="">
 
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lz/2.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lz/3.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lz/4.jpeg" alt="">
                         </div>
                     </div>
                     <!-- /.row -->
@@ -123,16 +172,16 @@
                     <!-- Projects Row -->
                     <div class="row">
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lz/5.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lz/6.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lz/7.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lz/8.jpeg" alt="">
                         </div>
                     </div>
                     <!-- /.row -->
@@ -144,17 +193,17 @@
                     <div class="row" style="margin-bottom:20px">
                         <div class="col-md-3 portfolio-item">
 
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lo/1.jpeg" alt="">
 
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lo/2.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lo/3.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lo/4.jpeg" alt="">
                         </div>
                     </div>
                     <!-- /.row -->
@@ -162,16 +211,16 @@
                     <!-- Projects Row -->
                     <div class="row">
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lo/5.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lo/6.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lo/7.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lo/8.jpeg" alt="">
                         </div>
                     </div>
                     <!-- /.row -->
@@ -183,17 +232,17 @@
                     <div class="row" style="margin-bottom:20px">
                         <div class="col-md-3 portfolio-item">
 
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/ltw/1.jpeg" alt="">
 
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/ltw/2.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/ltw/3.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/ltw/4.jpeg" alt="">
                         </div>
                     </div>
                     <!-- /.row -->
@@ -201,16 +250,16 @@
                     <!-- Projects Row -->
                     <div class="row">
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/ltw/5.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/ltw/6.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/ltw/7.jpeg" alt="">
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/ltw/8.jpeg" alt="">
                         </div>
                     </div>
                     <!-- /.row -->
@@ -222,34 +271,11 @@
                     <div class="row" style="margin-bottom:20px">
                         <div class="col-md-3 portfolio-item">
 
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lth/1.jpeg" alt="">
 
                         </div>
                         <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                    </div>
-                    <!-- /.row -->
-
-                    <!-- Projects Row -->
-                    <div class="row">
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
+                            <img class="img-responsive" src="img/lth/2.jpeg" alt="">
                         </div>
                     </div>
                     <!-- /.row -->
@@ -257,41 +283,8 @@
             </div><!--end tab-pane -->
             <div class="tab-pane" id="tab4">
                 <div class="jumbotron">
-                    <h1 style="margin-top:-20px"> LEVEL 4 </h1>
-                    <div class="row" style="margin-bottom:20px">
-                        <div class="col-md-3 portfolio-item">
-
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                    </div>
-                    <!-- /.row -->
-
-                    <!-- Projects Row -->
-                    <div class="row">
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                        <div class="col-md-3 portfolio-item">
-                            <img class="img-responsive" src="http://placehold.it/200x200" alt="">
-                        </div>
-                    </div>
-                    <!-- /.row -->
+                    <h1 style="margin-top:-20px"> End Analysis </h1>
+                    <div id="container"></div>
                 </div>
             </div><!--end tab-pane -->
         </div><!-- end tab-content -->

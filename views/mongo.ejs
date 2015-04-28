@@ -26,7 +26,7 @@
             },
             yAxis: {
                 title: {
-                    text: 'Level (No. of occurences)'
+                    text: 'Levels of Diabetic Retinopathy '
                 },
                 plotLines: [{
                     value: 0,
@@ -44,8 +44,11 @@
                 borderWidth: 0
             },
             series: [{
-                name: 'Level',
-                data: [<%= array %>]
+                name: 'Accuracy of 3',
+                data: [260, 237, 3, 0, 0]
+            }, {
+                name: 'Accuracy of 25',
+                data: [59, 31, 8, 2, 0]
             }]
         });
     });
